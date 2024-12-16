@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
-.header .header-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -32,7 +32,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.new-task-wrapper {
+.new-task {
   display: flex;
 }
 ul {
@@ -60,8 +60,7 @@ button{
   color: #3a3a3a;
 }
 /* Heading */
-.section-header,
-.label-new-task {
+.section__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +69,7 @@ button{
   margin: 0;
   text-transform: uppercase;
 }
-.input-text {
+.input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,21 +81,21 @@ button{
   font-family: Lato, sans-serif;
   color: #888;
 }
-.input-text:focus {
+.input_text:focus {
   color: #333;
 }
 
 /* New Task */
-.label-new-task {
+.section__label-new-task {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.new-task__input_text {
   width: 318px;
 }
 
 /* Task list */
-.list-item {
+.item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,52 +104,52 @@ button{
   justify-content: space-between;
   align-items: center;
 }
-.list-item > * {
+.item > * {
   vertical-align: middle;
 }
 
-.list-item > .input-checkbox {
+.item > .input_checkbox {
   margin: 0 10px;
 }
-.list-item > .task-label {
+.item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item >    .input-text {
+.item >    .input_text {
   width: 226px;
 }
-.button.delete .delete-img {
+.button.button_delete .button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button.delete .delete-img:hover {
+.button.button_delete .button__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+.section__list_completed-tasks .item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .list-item .input-text {
+.item .input_text {
   display: none;
 }
 
-.list .list-item.edit-mode .input-text {
+.item.item_edit .input_text {
   display: inline-block;
   width: 224px;
 }
 
-.list .list-item.edit-mode .task-label {
+.item.item_edit .item__label {
   display: none;
 }
 
-.seo-title {
+.header__seo-title {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
